@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef Atef | Full-Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<base target="_blank">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">&lt;Yousef<span>/&gt;</span></div>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="dot"></span> Available for Work</div>
+                <h1>Hi, I'm <span class="gradient-text">Yousef Atef</span></h1>
+                <div class="typing">I build <span id="typing-text"></span><span class="cursor">|</span></div>
+                <p class="hero-desc">Full-Stack Developer specializing in PHP Laravel, modern JavaScript, and scalable web applications. Transforming ideas into powerful digital experiences.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                    <a href="#contact" class="btn-outline"><i class="fas fa-envelope"></i> Get In Touch</a>
+                </div>
+            </div>
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">developer.php</span>
+                </div>
+                <div class="code-body">
+                    <div><span class="keyword">class</span> <span class="function">Developer</span> {</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">$name</span> = <span class="string">"Yousef Atef"</span>;</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">$role</span> = <span class="string">"Full-Stack Developer"</span>;</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">$location</span> = <span class="string">"Egypt"</span>;</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">$status</span> = <span class="string">"Available"</span>;</div>
+                    <div>&nbsp;&nbsp;</div>
+                    <div>&nbsp;&nbsp;<span class="keyword">public function</span> <span class="function">build</span>(<span class="variable">$idea</span>) {</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="variable">$this</span>-><span class="function">code</span>(<span class="variable">$idea</span>)</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-><span class="function">design</span>()</div>
+                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-><span class="function">deploy</span>();</div>
+                    <div>&nbsp;&nbsp;}</div>
+                    <div>}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-box reveal">
+                <div class="stat-icon">⚡</div>
+                <h3>1<span class="plus">+</span></h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-box reveal reveal-delay-1">
+                <div class="stat-icon">🚀</div>
+                <h3>10<span class="plus">+</span></h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-box reveal reveal-delay-2">
+                <div class="stat-icon">🤝</div>
+                <h3>3<span class="plus">+</span></h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-box reveal reveal-delay-3">
+                <div class="stat-icon">☕</div>
+                <h3>∞</h3>
+                <p>Cups of Coffee</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="section-header reveal">
+            <div class="section-label">// About Me</div>
+            <h2 class="section-title">Building Digital Experiences<br>That <span class="gradient-text">Matter</span></h2>
+            <p class="section-subtitle">Passionate about clean code, modern design, and scalable architecture.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-img reveal">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=500&fit=crop" alt="Coding workspace">
+            </div>
+            <div class="about-content reveal">
+                <h3>Full-Stack Developer from Egypt</h3>
+                <p>Hi, I'm Yousef Atef — a passionate Full-Stack Developer with a strong interest in building modern, scalable, and user-friendly web applications. I enjoy transforming ideas into real digital experiences.</p>
+                <p>I work with both frontend and backend technologies, handling complete web application development from interactive user interfaces to secure server-side systems.</p>
+                <p>Skilled in PHP, Laravel, JavaScript, MySQL, HTML, CSS, API Integration, Git, and Responsive Web Design — always eager to learn, innovate, and build impactful projects.</p>
+                <div class="about-tags">
+                    <span class="about-tag">PHP</span>
+                    <span class="about-tag">Laravel</span>
+                    <span class="about-tag">JavaScript</span>
+                    <span class="about-tag">MySQL</span>
+                    <span class="about-tag">React.js</span>
+                    <span class="about-tag accent">Available for Freelance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="section-header reveal">
+            <div class="section-label">// Technical Skills</div>
+            <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+            <p class="section-subtitle">Technologies I use to bring ideas to life.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <div class="skill-header">
+                    <div class="skill-icon purple"><i class="fab fa-php"></i></div>
+                    <div><h4>PHP</h4><span class="skill-desc">Backend Development</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="90%"></div></div>
+                <div class="skill-percent">90%</div>
+            </div>
+            <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-header">
+                    <div class="skill-icon green"><i class="fab fa-laravel"></i></div>
+                    <div><h4>Laravel</h4><span class="skill-desc">PHP Framework</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="88%"></div></div>
+                <div class="skill-percent">88%</div>
+            </div>
+            <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-header">
+                    <div class="skill-icon blue"><i class="fab fa-js"></i></div>
+                    <div><h4>JavaScript</h4><span class="skill-desc">Frontend Logic</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="85%"></div></div>
+                <div class="skill-percent">85%</div>
+            </div>
+            <div class="skill-card reveal">
+                <div class="skill-header">
+                    <div class="skill-icon orange"><i class="fas fa-database"></i></div>
+                    <div><h4>MySQL</h4><span class="skill-desc">Database Design</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="82%"></div></div>
+                <div class="skill-percent">82%</div>
+            </div>
+            <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-header">
+                    <div class="skill-icon pink"><i class="fab fa-html5"></i></div>
+                    <div><h4>HTML & CSS</h4><span class="skill-desc">Web Structure & Style</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="92%"></div></div>
+                <div class="skill-percent">92%</div>
+            </div>
+            <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-header">
+                    <div class="skill-icon cyan"><i class="fab fa-react"></i></div>
+                    <div><h4>React.js</h4><span class="skill-desc">Modern UI Library</span></div>
+                </div>
+                <div class="skill-bar"><div class="fill" data-width="75%"></div></div>
+                <div class="skill-percent">75%</div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="section-header reveal">
+            <div class="section-label">// What I Offer</div>
+            <h2 class="section-title">Services I <span class="gradient-text">Provide</span></h2>
+            <p class="section-subtitle">End-to-end solutions for your digital needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <span class="service-num">01</span>
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Full-Stack Development</h3>
+                <p>Complete web applications from database design to UI/UX implementation using PHP Laravel and modern JavaScript frameworks.</p>
+                <div class="service-tags"><span>Laravel</span><span>React</span><span>MySQL</span></div>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <span class="service-num">02</span>
+                <div class="service-icon"><i class="fas fa-plug"></i></div>
+                <h3>API Development</h3>
+                <p>Building secure and scalable RESTful APIs with clean architecture, authentication, and comprehensive documentation.</p>
+                <div class="service-tags"><span>REST API</span><span>Auth</span><span>Docs</span></div>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <span class="service-num">03</span>
+                <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Responsive Design</h3>
+                <p>Ensuring your website looks perfect on all devices with mobile-first approach and modern CSS frameworks.</p>
+                <div class="service-tags"><span>Tailwind</span><span>Bootstrap</span><span>Mobile-First</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">// Portfolio</div>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">A selection of my recent work and side projects.</p>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop" alt="CMS Dashboard">
+                    <div class="project-overlay">
+                        <a href="https://yousefatef2.github.io/Dashboard/index.html" target="_blank" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/yousefAtef2" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag-laravel">Laravel</span>
+                        <span class="tag-mysql">MySQL</span>
+                    </div>
+                    <h3>Dynamic Content Management System</h3>
+                    <p>A robust blogging platform with secure admin dashboard, user authentication, category filtering, and interactive commenting system.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=500&fit=crop" alt="Coffee Landing Page">
+                    <div class="project-overlay">
+                        <a href="https://yousefatef2.github.io/cofe/" target="_blank" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/yousefAtef2" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag-react">React.js</span>
+                        <span class="tag-js">Animations</span>
+                    </div>
+                    <h3>Premium Coffee Experience Interface</h3>
+                    <p>Modern, highly responsive landing page for a coffee brand with smooth scrolling animations and interactive menu gallery.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=500&fit=crop" alt="E-Commerce">
+                    <div class="project-overlay">
+                        <a href="https://up-shop.vercel.app/" target="_blank" title="View Live"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/yousefAtef2/UpShop" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag-js">JavaScript</span>
+                        <span class="tag-react">React.js</span>
+                        <span class="tag-tailwind">Tailwind</span>
+                    </div>
+                    <h3>Urban-Step E-Commerce Platform</h3>
+                    <p>Full-scale online store with complex product filtering, dynamic shopping cart, and secure checkout with order tracking.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&h=500&fit=crop" alt="Hangman Game">
+                    <div class="project-overlay">
+                        <a href="https://yousefatef2.github.io/hung-game/" target="_blank" title="Play Now"><i class="fas fa-play"></i></a>
+                        <a href="https://github.com/yousefAtef2/hung-game" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="tag-js">JavaScript</span>
+                        <span class="tag-react">DOM</span>
+                    </div>
+                    <h3>Guessing Challenge (Hangman)</h3>
+                    <p>Logic-based web game with dynamic SVG drawing, keyboard event listeners, and responsive UI design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-header reveal">
+            <div class="section-label">// Testimonials</div>
+            <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            <p class="section-subtitle">Feedback from people I've worked with.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>Yousef delivered an outstanding e-commerce platform for our fashion brand. The attention to detail and clean code structure exceeded our expectations. Highly recommended!</p>
+                <div class="client">
+                    <img src="https://ui-avatars.com/api/?name=Ahmed+Khaled&background=6366f1&color=fff" alt="Client">
+                    <div class="client-info"><h4>Ahmed Khaled</h4><span>Founder, Urban Threads</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-1">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>The CMS Yousef built for our blog is incredibly robust. The admin dashboard is intuitive and the API integration was seamless. Great communication throughout the project.</p>
+                <div class="client">
+                    <img src="https://ui-avatars.com/api/?name=Sara+Mohamed&background=10b981&color=fff" alt="Client">
+                    <div class="client-info"><h4>Sara Mohamed</h4><span>Content Director</span></div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-2">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>Professional, punctual, and technically skilled. Yousef transformed our outdated website into a modern, responsive platform that increased our conversions by 40%.</p>
+                <div class="client">
+                    <img src="https://ui-avatars.com/api/?name=Omar+Hassan&background=f59e0b&color=fff" alt="Client">
+                    <div class="client-info"><h4>Omar Hassan</h4><span>CEO, TechStart</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-header reveal">
+            <div class="section-label">// Contact</div>
+            <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            <p class="section-subtitle">Have a project in mind? I'm currently available for freelance work.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>Get In Touch</h3>
+                <p>Whether you have a question, a project proposal, or just want to say hi — I'd love to hear from you.</p>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div><h4>Email</h4><span>dev.yousef.atef@gmail.com</span></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><h4>Location</h4><span>Egypt (Remote Worldwide)</span></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <div><h4>Availability</h4><span>Mon - Fri, 9AM - 6PM EET</span></div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/yousefAtef2" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yousef-atef22/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/201033734422"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:dev.yousf.atef@gmail.com"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+            </div>
+            <div class="contact-form reveal reveal-delay-1">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Project Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">&lt;Yousef<span>/&gt;</span></div>
+        <p>© 2026 Yousef Atef. Built with passion & lots of coffee.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
