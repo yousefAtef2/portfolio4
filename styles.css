@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
 /* ========== CSS Variables ========== */
 :root {
     --bg: #0a0a0f;
@@ -44,7 +47,7 @@ nav {
     transition:all 0.3s ease;
 }
 nav.scrolled { padding:12px 48px; background:rgba(10,10,15,0.95); }
-.logo { font-family:'JetBrains Mono', monospace; font-weight:700; font-size:20px; color:var(--text); }
+.logo { font-family:"Playwrite IE", cursive; font-weight:700; font-size:20px; color:var(--text); }
 .logo span { color:var(--primary); }
 .nav-links { display:flex; gap:32px; align-items:center; }
 .nav-links a {
@@ -168,8 +171,8 @@ nav.scrolled { padding:12px 48px; background:rgba(10,10,15,0.95); }
 .skill-card .skill-header { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
 .skill-card .skill-icon { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:22px; }
 .skill-card .skill-icon.purple { background:rgba(99,102,241,0.1); color:var(--primary); }
-.skill-card .skill-icon.green { background:rgba(16,185,129,0.1); color:var(--accent); }
-.skill-card .skill-icon.blue { background:rgba(59,130,246,0.1); color:#60a5fa; }
+.skill-card .skill-icon.red { background:rgba(255,0,0,0.1); color:red; }
+.skill-card .skill-icon.blue { background:rgba(59,130,246,0.1); color:#f7df1d; }
 .skill-card .skill-icon.orange { background:rgba(245,158,11,0.1); color:#f59e0b; }
 .skill-card .skill-icon.pink { background:rgba(236,72,153,0.1); color:#ec4899; }
 .skill-card .skill-icon.cyan { background:rgba(6,182,212,0.1); color:#06b6d4; }
@@ -178,8 +181,8 @@ nav.scrolled { padding:12px 48px; background:rgba(10,10,15,0.95); }
 .skill-bar { height:6px; background:var(--bg-hover); border-radius:3px; overflow:hidden; margin-bottom:8px; }
 .skill-bar .fill { height:100%; border-radius:3px; transition:width 1.5s ease; width:0; }
 .skill-card:nth-child(1) .fill { background:var(--gradient-1); }
-.skill-card:nth-child(2) .fill { background:var(--gradient-2); }
-.skill-card:nth-child(3) .fill { background:linear-gradient(90deg,#60a5fa,#3b82f6); }
+.skill-card:nth-child(2) .fill { background: red; }
+.skill-card:nth-child(3) .fill { background: #f7df1d; }
 .skill-card:nth-child(4) .fill { background:linear-gradient(90deg,#f59e0b,#d97706); }
 .skill-card:nth-child(5) .fill { background:linear-gradient(90deg,#ec4899,#db2777); }
 .skill-card:nth-child(6) .fill { background:linear-gradient(90deg,#06b6d4,#0891b2); }
@@ -288,13 +291,13 @@ nav.scrolled { padding:12px 48px; background:rgba(10,10,15,0.95); }
 .form-success { display:none; background:rgba(16,185,129,0.1); border:1px solid rgba(16,185,129,0.2); color:var(--accent); padding:16px; border-radius:10px; text-align:center; margin-top:16px; }
 
 /* ========== FOOTER ========== */
-footer {
+/* footer {
     padding:40px 48px; border-top:1px solid var(--border);
     text-align:center; color:var(--text-muted); font-size:14px;
     position:relative; z-index:1;
 }
 footer .footer-logo { font-family:'JetBrains Mono', monospace; font-weight:700; font-size:20px; color:var(--text); margin-bottom:12px; }
-footer .footer-logo span { color:var(--primary); }
+footer .footer-logo span { color:var(--primary); } */
 
 /* ========== SCROLL ANIMATIONS ========== */
 .reveal { opacity:0; transform:translateY(40px); transition:all 0.8s ease; }
@@ -323,4 +326,147 @@ footer .footer-logo span { color:var(--primary); }
     .stats-grid, .skills-grid, .services-grid, .testimonials-grid { grid-template-columns:1fr; }
     .about-section, .skills-section, .services-section, .projects-section, .testimonials-section, .contact-section, .stats-section { padding:60px 24px; }
     .section-title { font-size:32px; }
+}
+
+
+.fot{
+    margin-top: 100px;
+
+}
+.main-footer {
+    background: var(--card-bg);
+    padding: 70px 8% 20px;
+    border-top: 1px solid rgba(89, 243, 1, 0.1);
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-about p {
+    margin-top: 20px;
+    color: #888;
+    max-width: 350px;
+    line-height: 1.8;
+}
+
+.footer-links h3, .footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* خط صغير تحت العناوين */
+.footer-links h3::after, .footer-social h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--accent-color);
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #888;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--accent-color);
+    padding-left: 8px;
+}
+
+/* أيقونات التواصل */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:rgb(10 102 194);
+    text-decoration: none;
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-icons .link1:hover,
+.social-icons .link3:hover {
+    background:rgb(10 102 194);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(10 102 194);
+}
+.social-icons .link4:hover {
+    background: #25d366;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #25d366;
+}
+.social-icons .link5:hover {
+    background: #EA4335;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #EA4335;
+}
+
+.social-icons a:hover {
+    background: var(--accent-color);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #000;
+}
+
+/* الجزء السفلي (Copyright) */
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-bottom span {
+    color: var(--accent-color);
+}
+
+/* تحسين الاستجابة للموبايل */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .footer-about p {
+        margin: 20px auto 0;
+    }
+
+    .footer-links h3::after, .footer-social h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
